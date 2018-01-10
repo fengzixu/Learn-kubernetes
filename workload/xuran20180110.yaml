@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: xuran-test-web-server-deployment
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: xuran-flask-server
+    spec:
+      containers:
+        - name: xuran-flask-server
+          image: reg.qiniu.com/apps-mysql/xuran-20180110:v1
+          ports:
+            - containerPort: 80
+      imagePullSecrets:
+        - name: qiniu-hub
