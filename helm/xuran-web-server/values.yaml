@@ -1,0 +1,9 @@
+replicaCount: 3
+image:
+  repository: reg.qiniu.com/apps-mysql/xuran-20180110
+  tag: v1
+  pullPolicy: IfNotPresent
+service:
+  type: NodePort
+  port: 8080
+  nodePort: 31704

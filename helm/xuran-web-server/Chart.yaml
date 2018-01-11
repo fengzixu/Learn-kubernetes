@@ -1,0 +1,11 @@
+name: xuran-web-server
+description: A basic HTTP server which implemented by python and flask
+version: 0.1.0
+keywords:
+  - http
+  - python
+  - web
+  - server
+maintainers:
+  - name: xuran
+    email: hnustphoenix@gmail.com

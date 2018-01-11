@@ -1,0 +1,4 @@
+1. 最小的调度单位 pod, pod 是一组 container 集合
+2. controller 管理 pod， pod 失效， 挂掉。 1. desired state 3.
+3. replica
+4. deployment
